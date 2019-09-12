@@ -16,13 +16,9 @@ public class Product {
      * Display a full description of the product
      */
 
-
     public void look() {
         this.deescription = deescription;
-
-
     }
-
     /**
      * Add the product to a Bill
      * @param bill the concerned bill
