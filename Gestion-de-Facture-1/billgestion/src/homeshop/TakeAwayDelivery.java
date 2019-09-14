@@ -7,4 +7,9 @@ public class TakeAwayDelivery implements Delivery{
     public double getprice() {
         return 0;
     }
+
+    @Override
+    public String getInfo() {
+        return "retrait 0.00 $";
+    }
 }

@@ -4,4 +4,5 @@ public interface Delivery {
 
     public double getprice();
 
+    String getInfo();
 }

@@ -16,5 +16,10 @@ public class ExpressDelivery implements Delivery{
             return 9.99;
     }
 
+    @Override
+    public String getInfo() {
+        return "Livraison à domicille expres " + getprice();
     }
+
+}
 
