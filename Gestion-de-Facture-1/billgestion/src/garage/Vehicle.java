@@ -1,10 +1,10 @@
 package garage;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 
 
-    private String modelName;
+    protected String modelName;
     private String description;
     private String manufacturer;
     private int year;
@@ -24,13 +24,9 @@ public class Vehicle {
         this.weight = weight;
     }
 
-    public void start() {
-        System.out.println("Je suis " + modelName + " et je  démarre");
-    }
+    public abstract void start();
 
-    public void stop() {
-        System.out.println("Je suis " + modelName + " et je m'arrête");
-    }
+    public abstract void stop();
 
 
     public String getModelName() {

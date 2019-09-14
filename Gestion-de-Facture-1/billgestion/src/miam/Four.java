@@ -1,11 +1,12 @@
 package miam;
 
 public class Four {
-    private int puissance;
-    private int capacite;
+    protected int puissance;
+    protected int capacite;
 
     private Resistance  resistance ;
     private Soufflerie soufflerie ;
+
 
 
 
@@ -40,10 +41,10 @@ public class Four {
     public Soufflerie getSoufflerie() {
         return soufflerie;
     }
-
     public int getCapacite() {
         return capacite;
     }
+
 
     public void setCapacite(int capacite) {
         this.capacite = capacite;

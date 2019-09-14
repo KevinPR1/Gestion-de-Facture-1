@@ -10,10 +10,6 @@ public class Car extends Vehicle{
     private String motor;
     private List<String> options = new ArrayList<String>();
 
-    public Car(String modelName, String description, String manufacturer, int yeah, String color, int speed, int[] dimensions, int weight) {
-        super(modelName, description, manufacturer, yeah, color, speed, dimensions, weight);
-    }
-
 
     public Car(String modelName, String description, String manufacturer, int yeah, String color, int speed, int[] dimensions, int weight, int door, int literPer100km, String motor, List<String> options) {
         super(modelName, description, manufacturer, yeah, color, speed, dimensions, weight);
@@ -22,6 +18,21 @@ public class Car extends Vehicle{
         this.motor = motor;
         this.options = options;
     }
+
+
+
+    @Override
+    public void start() {
+        System.out.println("Je suis " + modelName + " je consomme " + literPer100km + " au 100km et je démarre !" );
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Je suis " + modelName + " j'arrête mon moteur " + motor);
+
+    }
+
+
 
     public void startHeadlight() {
         System.out.println("J'allume mes phares");

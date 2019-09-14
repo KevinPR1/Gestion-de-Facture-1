@@ -2,6 +2,7 @@ package miam;
 
 public class Main {
 
+
     public static void main(String[] args) {
         Four grandFour = new Four();
         grandFour.capacite = 55;
@@ -16,7 +17,11 @@ public class Main {
         grandFour.cuire(cake);
         System.out.println("");
         cake.manger();
+
     }
+
+
+
 
 }
 

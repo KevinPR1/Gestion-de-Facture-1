@@ -2,21 +2,23 @@ package homeshop;
 
 import miam.Resistance;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Bill {
 
 
         private Consumer consumer;
-        private Map<Product, Integer> products;
+        private Map<Product, Integer> products = new HashMap<Product, Integer>();
+        private Delivery delivery;
 
 
-    public Bill(Consumer consumer) {
+    public Bill(Consumer consumer, Delivery delivery) {
         this.consumer = consumer;
+        this.delivery = delivery;
     }
 
-
-        /**
+    /**
          * Add a product with a quantity in the bill
          *
          * @param product  product to add
