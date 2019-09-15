@@ -55,6 +55,11 @@ private Writer writerMock = new Writer() {
     }
 
 
+    @Test
+    public void Given_emptyProductList_When_generatingBill_Then_throwsException() {
+        Bill bill = new Bill(consumer, lowCostRelayDelivery);
+        assertThrows(NoProductInBillException.class, () -> bill.generate(writerMock));
+    }
 
 
 }
